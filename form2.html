@@ -41,7 +41,7 @@
   <header id="header" class="fixed-top">
     <div class="container">
       <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><img src="logofinal.png" alt="" class="img-fluid" style="width: 35%; height: auto;"><span id="show" style="display: none;">JALDOOT</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><img src="logofinal.png" alt="" class="img-fluid image" style="width: 55%; height: auto;"><span id="show" style="display: none;">JALDOOT</span></a></h1>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
@@ -86,7 +86,7 @@
 
           </div>
           <div class="col-lg-6">
-            <form method="post" id="contactForm2" class="php-email-form">
+            <form method="post" id="contactForm2" class="php-email-form" action="https://formspree.io/xwkryvbd">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name1" required placeholder="Your Name*" data-rule="minlen:1" data-msg="Please enter your name" />
@@ -109,6 +109,15 @@
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" name="address" id="address1" placeholder="Address (optional)" />
+              </div>
+              <div class="form-group">
+                <select class="custom-select" name="purpose" required>
+                  <option value="">Purpose</option>
+                  <option value="Need help in saving water" class="form-control">Need help in saving water</option>
+                  <option value="Need help in rainwater harvesting" class="form-control">Need help in rainwater harvesting</option>
+                  <option value="Need help in groundwater recharge" class="form-control">Need help in groundwater recharge</option>
+                  <option value="Need help in water recycling" class="form-control">Need help in water recycling</option>
+                </select>
               </div>
                <div class="mb-3">
                 <div class="alert" style="text-align: center;">Your message has been sent.</div>
@@ -182,12 +191,10 @@
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
-<script type="text/javascript" src="script1.js"></script>
 <script type="text/javascript" src="main.js"></script>
-
+<script type="text/javascript">
+  document.getElementById("contactForm2").reset();
+</script>
 </body>
 
 </html>
