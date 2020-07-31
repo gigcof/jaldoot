@@ -2149,7 +2149,19 @@ section {
   .re {
     font-size: 9rem !important;
   }
+  .txt {
+    font-size: 2rem !important;
+  }
   .mg {
-    margin-top: 5% !important;
+    margin-top: 10% !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .textsize {
+    font-size: 20px !important;
+  }
+  .re {
+    font-size: 8rem !important;
   }
 }
